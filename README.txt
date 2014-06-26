@@ -38,8 +38,10 @@ values every time the battery is inserted.
 bqtool
 ******
 bqtool is an Android commandline utility for programming, monitoring,
-and debugging TI's bq27xxx family of single-cell gas gauges. Although
-it's created for Android it can be easily ported for any Linux system.
+and debugging TI's bq27xxx family of single-cell gas gauges. Currently
+it supports only bqfs flashing. However, more features will be added
+in the future. Although bqtool is created for Android it can be easily
+ported for any Linux system.
 
 It's available here:
 https://github.com/aneeshv/bqtool.git
