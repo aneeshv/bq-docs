@@ -4,6 +4,22 @@ Latest Linux device driver for bq27xxx single-cell gauges is available here:
 https://github.com/aneeshv/linux-bq27xxx.git
 branch: master
 
+Driver file:
+https://github.com/aneeshv/linux-bq27xxx/blob/master/drivers/power/bq27x00_battery.c
+
+Enabling the driver on your platform:
+The following patch demonstrates how bq274xx support was added on
+Beaglebone Black assuming it is connected to I2C1 bus.
+https://github.com/aneeshv/linux-bq27xxx/commit/41d350fc48643e82982c4ad93f20878f83e3408d
+Replace "bq274xx" with the correct devices for your platform. The list of
+devices currently supported by the driver can be found in:
+
+https://github.com/aneeshv/linux-bq27xxx/blob/master/drivers/power/bq27x00_battery.c
+
+Look for this array in the driver to see the list of currenlty supported
+devices:
+static const struct i2c_device_id bq27x00_id[] = {
+
 Support for ROM-based Gauges (bq274xx/bq27621):
 ===============================================
 The above driver supports some of the special requirements for ROM-based
