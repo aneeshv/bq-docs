@@ -48,8 +48,8 @@ static struct dm_reg bq276xx_dm_regs[] = {
 
 What it doesn’t:
 It doesn’t have a mechanism to save and restore Ra values and Qmax as
-suggested in the Quick Start Guide.  This means it will reload default
-values every time the battery is inserted.
+suggested in the Quick Start Guide of bq274xx devices.  This means it will
+reload default values every time the battery is inserted.
 
 bqtool
 ******
